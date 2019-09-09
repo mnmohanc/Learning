@@ -1,0 +1,29 @@
+
+def String deploy_env(String host1,String host2) 
+    {
+    echo "deploy to host $host1 && $host2  "  
+       
+     }
+
+node {
+    
+    def preBuild = {
+    echo 'preBuild function'
+     }
+
+    def deploy = {
+    echo ' inside deploy function'
+     }
+    
+    stage('Example') {
+        test_var= "dev"
+        if (test_var == 'master') {
+            echo 'I only execute on the master branch'
+        } else {
+            echo 'I execute elsewhere'
+            preBuild()
+            deploy()
+            deploy_env("server1","server2")
+        }
+    }
+}
