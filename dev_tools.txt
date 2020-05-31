@@ -1,8 +1,11 @@
 
 GIT:
 
-https://app.pluralsight.com/library/courses/getting-started-git/table-of-contents
+https://app.pluralsight.com/library/courses/getting-started-git/table-of-contents  - 2 hr
 
+https://app.pluralsight.com/library/courses/github-getting-started/table-of-contents - 3 hr
+
+https://app.pluralsight.com/library/courses/using-git-with-gui/table-of-contents - 2 hr
 
 Editors:
 
